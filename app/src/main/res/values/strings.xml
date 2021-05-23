@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CodingTest</string>
+    <string name="empty_list">No data found!</string>
+    <string name="an_error_occurred">An error occurred</string>
+    <string name="load">Load</string>
+    <string name="sort">Sort</string>
+    <string name="title_error_dialog">error</string>
+    <string name="btn_ok">OK</string>
+</resources>

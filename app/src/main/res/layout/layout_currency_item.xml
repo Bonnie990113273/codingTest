@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="currency"
+            type="com.jike.cxm.codingtest.model.local.entity.CurrencyEntity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="56dp"
+            android:background="@color/text_gray" />
+
+        <TextView
+            android:id="@+id/leftIndex"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_white"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@{currency.id}"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/leftIndex"
+            android:text="@{currency.name}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_20" />
+
+        <TextView
+            android:id="@+id/btnId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/next"
+            android:text="@{currency.symbol}"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/textsize_20" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/next" />
+    </RelativeLayout>
+
+</layout>
